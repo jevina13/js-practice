@@ -14,7 +14,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId); //false
+// console.log(id === anotherId); //false
 
 // const bigNumber = 3456543576654356754n
 
@@ -37,3 +37,26 @@ const myFunction = function(){    // typeOf -> function
 console.log(typeof anotherId); //typeOf -> Symbol
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//=================================
+
+//Stack(Primitive) , Heap(Non-Primitive)
+ 
+let youtubeName ="creative"
+let anotherName = youtubeName 
+anotherName="jevyoutube" //uses stack
+
+console.log(youtubeName); //will give diff name as it creates a copy and then updates
+console.log(anotherName);
+
+let user1={
+    email:"user@mail.in",
+    upi:"xyz"
+}
+//as this uses heap memory, the value of email for both users will change
+let user2=user1
+user2.email="user2@mail.com"
+
+console.log(user1);
+console.log(user2);
