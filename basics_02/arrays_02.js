@@ -12,7 +12,7 @@ console.log("new printed "+ allHeros);
 // const allHeros = marvel_heros.concat(dc_heros)
 // console.log(allHeros);
 
-const all_new_heros = [...marvel_heros, ...dc_heros]  //this is spread out values . values get separated
+const all_new_heros = [...marvel_heros, ...dc_heros]  //spread operator ... this is spread out values . values get separated
 
 // console.log(all_new_heros);
 
